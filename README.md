@@ -1,24 +1,13 @@
 # Autoclicker
 
-## Initialization
-
-**Install `python3` [here](https://www.python.org/downloads/)**
+## **Download**
 
 ```bash
-pip3 install pyautogui
+cd ~/Downloads && git clone https://github.com/kenmueller/autoclicker-python.git && cd autoclicker-python && ./init && cd .. && rm -rf autoclicker-python && source ~/.autoclicker/main.sh && echo $'Successfully installed Autoclicker\nRun the command `autoclicker` to start'
 ```
+
+## Run
 
 ```bash
-pip3 install keyboard
+autoclicker
 ```
-
-## Execution
-
-```bash
-sudo python3 click.py
-```
-
-**Must be run as an administrator**
-
-1. Type in your password when prompted
-2. Press 'o' to start and 'p' to stop

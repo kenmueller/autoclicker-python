@@ -1,14 +1,17 @@
-import pyautogui as mouse
-import keyboard
+from pyautogui import click
+from keyboard import is_pressed
 
-print('Press \'o\' to start and \'p\' to stop or hold \'v\'')
+if __name__ == '__main__':
+	print('Press \'o\' to start and \'p\' to stop or hold \'v\'')
 
-on = False
+	on = False
 
-while True:
-	if keyboard.is_pressed('o'):
-		on = True
-	if keyboard.is_pressed('p'):
-		on = False
-	if on or keyboard.is_pressed('v'):
-		mouse.click()
+	while True:
+		if is_pressed('[') and is_pressed(']'):
+			break
+		if is_pressed('o'):
+			on = True
+		if is_pressed('p'):
+			on = False
+		if on or is_pressed('v'):
+			click()

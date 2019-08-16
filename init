@@ -1,0 +1,5 @@
+pip3 install --upgrade pip
+pip3 install -r requirements.txt
+cp main.py ~/.autoclicker/main.py
+echo $'function autoclicker() {\n\techo 'Autoclicker needs to take control of your mouse:'\n\tsudo python3 ~/.autoclicker/main.py\n}' > ~/.autoclicker/main.sh
+echo $'\n# Autoclicker\nsource ~/.autoclicker/main.sh' >> ~/.bash_profile
