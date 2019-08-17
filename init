@@ -1,42 +1,38 @@
 clear
-echo 'Downloading Autoclicker... 1/11'
+echo 'Downloading Autoclicker... 1/10'
 pip3 install --upgrade pip &> /dev/null
 
 clear
-echo 'Downloading Autoclicker... 2/11'
+echo 'Downloading Autoclicker... 2/10'
 pip3 install -r requirements.txt &> /dev/null
 
 clear
-echo 'Downloading Autoclicker... 3/11'
+echo 'Downloading Autoclicker... 3/10'
 mkdir ~/.autoclicker
 
 clear
-echo 'Downloading Autoclicker... 4/11'
+echo 'Downloading Autoclicker... 4/10'
 mv main.py ~/.autoclicker
 
 clear
-echo 'Downloading Autoclicker... 5/11'
+echo 'Downloading Autoclicker... 5/10'
 echo $'function autoclicker() {\n\tsudo python3 ~/.autoclicker/main.py\n}' > main.sh
 
 clear
-echo 'Downloading Autoclicker... 6/11'
+echo 'Downloading Autoclicker... 6/10'
 mv main.sh ~/.autoclicker
 
 clear
-echo 'Downloading Autoclicker... 7/11'
+echo 'Downloading Autoclicker... 7/10'
 echo $'\n# Autoclicker\nsource ~/.autoclicker/main.sh' >> ~/.bash_profile
 
 clear
-echo 'Downloading Autoclicker... 8/11'
+echo 'Downloading Autoclicker... 8/10'
 cd ..
 
 clear
-echo 'Downloading Autoclicker... 9/11'
+echo 'Downloading Autoclicker... 9/10'
 rm -rfv autoclicker-python
-
-clear
-echo 'Downloading Autoclicker... 10/11'
-source ~/.autoclicker/main.sh
 
 clear
 echo $'Successfully installed Autoclicker!\nRun the command `autoclicker` to start\n'
