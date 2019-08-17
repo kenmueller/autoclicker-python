@@ -32,7 +32,7 @@ cd ..
 
 clear
 echo 'Downloading Autoclicker... 9/11'
-rm -rf autoclicker-python
+rm -rfv autoclicker-python
 
 clear
 echo 'Downloading Autoclicker... 10/11'
