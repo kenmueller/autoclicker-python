@@ -1,5 +1,42 @@
-pip3 install --upgrade pip
-pip3 install -r requirements.txt
-cp main.py ~/.autoclicker/main.py
-echo $'function autoclicker() {\n\techo 'Autoclicker needs to take control of your mouse:'\n\tsudo python3 ~/.autoclicker/main.py\n}' > ~/.autoclicker/main.sh
+clear
+echo 'Downloading Autoclicker... 1/11'
+pip3 install --upgrade pip &> /dev/null
+
+clear
+echo 'Downloading Autoclicker... 2/11'
+pip3 install -r requirements.txt &> /dev/null
+
+clear
+echo 'Downloading Autoclicker... 3/11'
+mkdir ~/.autoclicker
+
+clear
+echo 'Downloading Autoclicker... 4/11'
+mv main.py ~/.autoclicker
+
+clear
+echo 'Downloading Autoclicker... 5/11'
+echo $'function autoclicker() {\n\tsudo python3 ~/.autoclicker/main.py\n}' > main.sh
+
+clear
+echo 'Downloading Autoclicker... 6/11'
+mv main.sh ~/.autoclicker
+
+clear
+echo 'Downloading Autoclicker... 7/11'
 echo $'\n# Autoclicker\nsource ~/.autoclicker/main.sh' >> ~/.bash_profile
+
+clear
+echo 'Downloading Autoclicker... 8/11'
+cd ..
+
+clear
+echo 'Downloading Autoclicker... 9/11'
+rm -rf autoclicker-python
+
+clear
+echo 'Downloading Autoclicker... 10/11'
+source ~/.autoclicker/main.sh
+
+clear
+echo $'Successfully installed Autoclicker!\nRun the command `autoclicker` to start\n'

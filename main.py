@@ -2,7 +2,7 @@ from pyautogui import click
 from keyboard import is_pressed
 
 if __name__ == '__main__':
-	print('Press \'o\' to start and \'p\' to stop or hold \'v\'')
+	print('Press \'o\' to start and \'p\' to stop or hold \'v\'\nPress \'[\' and \']\' at the same time to quit')
 
 	on = False
 
