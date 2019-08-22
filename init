@@ -24,7 +24,7 @@ mv main.sh ~/.autoclicker
 
 clear
 echo 'Downloading Autoclicker... 7/10'
-echo $'\n# Autoclicker\nsource ~/.autoclicker/main.sh' >> ~/.bash_profile
+[ -d ~/.autoclicker ] || echo $'\n# Autoclicker\nsource ~/.autoclicker/main.sh' >> ~/.bash_profile
 
 clear
 echo 'Downloading Autoclicker... 8/10'
